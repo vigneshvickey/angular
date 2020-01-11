@@ -1,0 +1,154 @@
+<div id="demo" class="carousel slide mb-5" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+	</ul>
+	
+	<!-- The slideshow -->
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="assets/img/2.jpg" >
+		</div>
+		<div class="carousel-item">
+			<img src="assets/img/2.png">
+		</div>
+		<div class="carousel-item">
+			<img src="assets/img/3.jpg">
+		</div>
+	</div>
+	
+	<!-- Left and right controls -->
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+</div>
+<div ></div>
+ {{datapare.username}}
+<h2 class="text-center mb-4">Top favorite</h2>
+<div class="container mb-5">
+	<div class="row mb-5">
+		<div class="col-4">
+			<div class="guitar-m">
+					<span class="sold">Sold Out</span>
+				<div class="img-sales text-center">
+					<img src="assets/img/s1.png" width="150px;">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+				<ul>
+					<li><span>rate</span>: $4564</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="guitar-m">
+					<span class="avilable">Available</span>
+				<div class="img-sales text-center">
+					<img src="assets/img/s2.png" width="200px;">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+				<ul>
+					<li><span>rate</span>: $4564</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="guitar-m">
+										<span class="sold">Sold Out</span>
+				<div class="img-sales text-center">
+					<img src="assets/img/s3.png" width="150px;">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+				<ul>
+					<li><span>rate</span>: $4564</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row mb-5">
+		<div class="col-4">
+			<div class="guitar-m">
+					<span class="avilable">Available</span>
+				<div class="img-sales text-center">
+					<img src="assets/img/s1.png" width="150px;">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+				<ul>
+					<li><span>rate</span>: $4564</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="guitar-m">
+					<span class="avilable">Available</span>
+				<div class="img-sales text-center">
+					<img src="assets/img/s2.png" width="200px;">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+				<ul>
+					<li><span>rate</span>: $4564</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="guitar-m">
+										<span class="sold">Sold Out</span>
+				<div class="img-sales text-center">
+					<img src="assets/img/s3.png" width="150px;">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+				<ul>
+					<li><span>rate</span>: $4564</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<div class="row  mb-5">
+	<div class="col-4">
+		<div class="guitar-m">
+				<span class="avilable">Available</span>
+			<div class="img-sales text-center">
+				<img src="assets/img/s1.png" width="150px;">
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+			<ul>
+				<li><span>rate</span>: $4564</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="guitar-m">
+			<span class="avilable">Available</span>
+			<div class="img-sales text-center">
+				<img src="assets/img/s2.png" width="200px;">
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+			<ul>
+				<li><span>rate</span>: $4564</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="guitar-m">
+			<span class="sold">Sold Out</span>
+			<div class="img-sales text-center">
+				<img src="assets/img/s3.png" width="150px;">
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu venenatis lectus. Sed consequat ac eros sit amet convallis. Sed finibus </p>
+			<ul>
+				<li><span>rate</span>: $4564</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+    <h2> Details </h2>
+    <b> Id   : </b> {{ Play.id }} <br>
+    <b> Name : </b> {{ Play.name }} <br>
+    <b> Inventor : </b> {{ Play.inventor }} <br>
+    <b> Details : </b> {{ Play.details }} <br>
+</div>
+</div>

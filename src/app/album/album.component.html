@@ -1,0 +1,17 @@
+<div class="container mb-5" *ngIf="albumlist">
+	<div class="row mb-5">
+		<div class="col-4" *ngFor="let album of albumlist">
+			<div class="guitar-m">
+					<span class="sold">{{album.albumId}}</span>
+				<div class="img-sales text-center">
+					<img src="{{album.url}}" width="150px;">
+				</div>
+				<p>{{album.title}}</p>
+				<ul>
+					<li><span>rate</span>: $456{{album.id}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="loader" *ngIf="showloader"><img src="https://loading.io/spinners/fidget-spinner/lg.fidget-spinner.gif" width="150px;"></div>

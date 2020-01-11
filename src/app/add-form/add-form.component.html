@@ -1,0 +1,111 @@
+<div class="container">
+  <div [hidden]="submitted">
+    <h1>Form</h1>
+    <form (ngSubmit)="onSubmit(name.value,power.value)" #heroForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name"
+               required
+               [(ngModel)]="model.name" name="name"
+               #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+       <div class="form-group">
+        <label for="data">data</label>
+        <input type="text" class="form-control" id="data"
+               required
+               [(ngModel)]="model.data" name="data"
+               #data="ngModel">
+        <div [hidden]="data.valid || data.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="alterEgo">Alter Ego</label>
+        <input type="text" class="form-control" id="alterEgo"
+               [(ngModel)]="model.alterEgo" name="alterEgo">
+      </div>
+
+      <div class="form-group">
+        <label for="power">Hero Power</label>
+        <select class="form-control" id="power"
+                required  
+                [(ngModel)]="model.power" name="power"
+                #power="ngModel">
+          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+        </select>
+        <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+          Power is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="data">data</label>
+        <select class="form-control" id="data" [(ngModel)]="model.data" required name="data"
+                #data="ngModel">
+        <option *ngFor="let sd of datas" [value]="sd">{{sd}}</option>
+        </select>
+        <div [hidden]="data.valid || data.pristine" class="alert alert-danger">
+          Power is required
+        </div>
+      </div>
+       <div class="form-group">
+          <label for="photoPath">Photo Path</label>
+          <input type="file" name="photoPath" class="form-control" id="photoPath" [(ngModel)]="model.photoPath" (change)="onSelectFile($event ,photoPath)"  #photoPath="ngModel"  [ngClass]="status ? 'success' : 'danger'" (click)="special(this)"> 
+
+           <p *ngIf="message">{{message}}</p>
+        </div>
+        <div class="form-group">
+            <button type="button" (click)="togglePreviewPhoto()" class="btn btn-primary" *ngIf="url">{{previewPhoto ? "Hide" : "Show" }} Preview</button>
+          </div>
+          <div class="form-group">
+          <img [src]="url" height="auto" width="200px" *ngIf="previewPhoto && !url== '' ">
+        </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid" (click)="getScreenSize($event)">Submit</button>
+      <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>
+      <i>with</i> reset
+
+      &nbsp;&nbsp;
+      <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
+      <i>without</i> reset
+
+     <!-- NOT SHOWN IN DOCS -->
+      <div>
+        <hr>
+        Name via form.controls = {{showFormControls(heroForm)}}
+      </div>
+     <!-- - -->
+    </form>
+  </div>
+  
+ 
+  <div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+      <div class="col-xs-3">Name</div>
+      <div class="col-xs-9">{{ model.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Alter Ego</div>
+      <div class="col-xs-9">{{ model.alterEgo }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Power</div>
+      <div class="col-xs-9">{{ model.power }}</div>
+    </div>
+        <div class="row">
+      <div class="col-xs-3">data</div>
+      <div class="col-xs-9">{{ model.data }}</div>
+    </div>
+      <div class="row">
+      <div class="col-xs-3">image</div>
+      <div class="col-xs-9"> <img [src]="url" height="auto" width="200px"></div>
+    </div>
+    <br>
+    <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div>
+</div>x

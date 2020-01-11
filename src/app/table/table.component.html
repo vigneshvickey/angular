@@ -1,0 +1,38 @@
+
+  <label>data name:
+    <input #userid />
+     <input #id />
+      <input #title />
+       <input #body />
+  </label>
+    <button (click)="add(userid.value,id.value,title.value,body.value);">
+    add
+  </button>
+<table datatable class="row-border hover" id="user-table" *ngIf="data_user" datatable="ng">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>USer ID</th>
+      <th>Title</th>
+      <th>body</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of data_user">
+      <td>{{data.userId}}</td>
+      <td>{{data.id}}</td>
+      <td>{{data.title}}</td>
+      <td>{{data.completed}}</td>
+    </tr>
+  </tbody>
+</table>
+  <ul *ngFor="let user of users">
+      <li>{{user.userId}}</li>
+      <li>{{user.id}}</li>
+      <li>{{user.title}}</li>
+      <li>{{user.body}}</li>
+      <li>  <button class="delete" title="deletehero"
+    (click)="deletedata(user)">delete</button></li>
+    </ul>
+<div class="loader" *ngIf="showloader"><img src="https://loading.io/spinners/fidget-spinner/lg.fidget-spinner.gif" width="150px;"></div>

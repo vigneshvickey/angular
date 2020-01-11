@@ -1,0 +1,29 @@
+p {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+.side_open{
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.btn-add:nth-child(1){
+    transform: rotate(44deg);
+    transition: 0.5s;
+    position: relative;
+    top: 11px;
+}
+.btn-add:nth-child(2){
+
+	    transform: rotate(131deg);
+    transition: 0.5s;
+
+}
+.btn-add:nth-child(3){
+	display: none;
+	transition: 0.5s;
+
+}

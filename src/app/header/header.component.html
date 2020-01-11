@@ -1,0 +1,57 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Guitar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" [routerLink]="['app-dashboard']">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" [routerLink]="['app-about']">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['app-banner']">Pricing</a>
+                </li>
+                  <li class="nav-item"  >
+                    <a class="nav-link" [routerLink]="['app-process']">sidebar</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav">
+                 <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['app-trform']">tr-form</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" [routerLink]="['app-play']">Action</a>
+                        <a class="dropdown-item" [routerLink]="['app-datasadd']">Another action</a>
+                         <a class="dropdown-item" [routerLink]="['app-dataparent']">parent</a>
+                         <a class="dropdown-item" [routerLink]="['app-sharing']">sharing</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  [routerLink]="['app-login']">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['app-register']" >Register</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['app-add-form']" >form</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['app-table']" >table</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['app-album']" >album</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['app-accordation']" >accordation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>

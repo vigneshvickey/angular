@@ -1,0 +1,24 @@
+.play{
+	background-image: url('/assets/img/login.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	    padding: 274px;
+	    color: #fff;
+	      
+}
+.play-cont{
+	  background: rgba(5,5,5,0.5);
+	      padding: 35px;
+}
+.play-cont input{
+	background:transparent!important;
+	color:#fff!important;
+}
+.enter-data{
+	    position: absolute;
+    width: 265px;
+    background: white;
+    /* text-align: center; */
+    border: 1px solid;
+    right: 0;
+}

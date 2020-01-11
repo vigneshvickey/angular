@@ -1,0 +1,16 @@
+<h2>my data listings</h2>
+<ul class="datas">
+  <li *ngFor="let da of datas"
+    [class.selected]="da === selectedData"
+    (click)="onSelect(da)">
+    <span class="badge">{{da.id}}</span> {{da.name}}
+  </li>
+</ul>
+
+<h2>{{selectedNamed.name | uppercase}} Details</h2>
+<div *ngIf="selectedNamed.name" ><span>id: </span>{{selectedNamed.id}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="selectedNamed.name" placeholder="name">
+  </label>
+</div>

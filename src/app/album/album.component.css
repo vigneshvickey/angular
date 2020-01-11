@@ -1,0 +1,49 @@
+.carousel-item{
+	width: 100%;
+	height: 450px;
+}
+.carousel-item{
+width: 100%;
+	}
+.img-sales{
+	    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.guitar-m{
+	    background: #f4f4f5;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.8s;
+    overflow: hidden;
+    position: relative;
+}
+.guitar-m:hover{
+
+	box-shadow:2px 2px 18px rgba(0,0,0,0.5);
+}
+.guitar-m .avilable{
+background: green;
+    color: white;
+    padding: 6px;
+    width: 50%;
+    position: absolute;
+    left: -46px;
+    text-align: center;
+    -webkit-transform: rotate(-48deg);
+    transform: rotate(-40deg);
+    border: 3px solid black;
+}
+.sold{
+	background: rgb(25,25,25);
+    color: white;
+    padding: 6px;
+    width: 50%;
+    position: absolute;
+    left: -46px;
+    text-align: center;
+    -webkit-transform: rotate(-48deg);
+    transform: rotate(-40deg);
+    border: 3px solid black;
+
+}

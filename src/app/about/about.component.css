@@ -1,0 +1,49 @@
+.navbar{background-color: #ededee;}
+.section1{background-color: #ededee;padding: 50px 0px 0px;position: relative;}
+.exp-btn{border-radius: 50px;}
+.info{ margin-top: 149px;}
+.ham{width: 80px;height: 80px;position: absolute;left: 0;overflow: hidden;padding: 16px;    z-index: 9;}
+.ham img{width: 100%;}
+.section2 .product{background-color: #ededee;}
+.section2 .product img{width: 100%;}
+.side-nav{position: absolute;width: 100%;background: black;color: white;height: 100%;z-index: 9;}
+.side-nav ul{list-style: none;}
+.side-nav ul li{font-size: 30px;}
+.side-nav{ transition: 1.2s; transform: translate(-130em);}
+.discloser{transition: 1.2s; transform: translate(0em);}
+ .side-nav i{font-size: 52px;padding: 21px;}
+.circle1{width: 50px;height: 50px;background-color: #5bb4ff;border-radius: 39px;position: absolute;        left: 26%;
+   top: 31px;
+   -webkit-animation-name: robot; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: robot;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes robot {
+   0%{ left: 26%;
+   top: 31px;}
+    25% {    left: 32%;
+    top: 5px;}
+        50% { left: 36%;
+    top: 207px;}
+      75% {    left: 25%;
+    top: 5px;}
+      
+     
+}
+
+/* Standard syntax */
+@keyframes robot {
+     0%{ left: 26%;
+   top: 31px;}
+    25% {    left: 32%;
+    top: 5px;}
+        50% { left: 36%;
+    top: 207px;}
+      75% {    left: 26%;
+    top: 5px;}
+     
+     
+}

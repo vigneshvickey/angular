@@ -1,0 +1,8 @@
+<div class="parent">
+ 
+                                 <h1 *ngIf="data">{{data}}----------------</h1>
+ 
+                     </div>
+                       {{emb_message}}
+    <button (click)="newMessage()">New Message</button>
+                     <app-datachild [childMessage]="parentMessage" (dataevent)="receiveMessage($event)"></app-datachild>
